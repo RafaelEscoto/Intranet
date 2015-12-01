@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  course_name: MyString
+  topic: MyString
+  expositor: MyString
+  start_date: 2015-11-23 16:29:23
+  duration: 2015-11-23 16:29:23
+  attendance_id: 1
+
+two:
+  course_name: MyString
+  topic: MyString
+  expositor: MyString
+  start_date: 2015-11-23 16:29:23
+  duration: 2015-11-23 16:29:23
+  attendance_id: 1

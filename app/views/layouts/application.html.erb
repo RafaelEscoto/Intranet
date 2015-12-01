@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inventory</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+
+<footer >
+	<div class="containerfooter, text-center">
+		Notaria Pública 30
+	</div>
+	<div class="imagen_logo, text-right">
+		<%= image_tag "powered_by_RoR.jpg"%>
+	</div>
+</footer>
+
+</html>

@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  birthdate: 2015-11-18
+  age: 1
+  phone: MyString
+  emergency_number: MyString
+  curp: MyString
+  imms: MyString
+  rfc: MyString
+  employee_id: MyString
+  date_of_admission: 2015-11-18
+  area_id: 1
+  boss: MyString
+  salary: 1
+  role_id: 1
+
+two:
+  name: MyString
+  birthdate: 2015-11-18
+  age: 1
+  phone: MyString
+  emergency_number: MyString
+  curp: MyString
+  imms: MyString
+  rfc: MyString
+  employee_id: MyString
+  date_of_admission: 2015-11-18
+  area_id: 1
+  boss: MyString
+  salary: 1
+  role_id: 1

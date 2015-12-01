@@ -1,0 +1,60 @@
+<%= simple_form_for(@user, html: { class: 'form-inline' }) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class="field">
+      <%= f.input :name %>
+    </div>
+    <div class="field">
+      <%= f.input :birthdate, :start_year=>1900 %>
+    </div>
+    <div class="field">
+      <%= f.input :age %>
+    </div>
+    <div class="field">
+      <%= f.input :phone %>
+    </div>
+    <div class="field">
+      <%= f.input :emergency_number %>
+    </div>
+    <div class="field">
+      <%= f.input :curp %>
+    </div>
+    <div class="field">
+      <%= f.input :imms %>
+    </div>
+    <div class="field">
+      <%= f.input :rfc %>
+    </div>
+    <div class="field">
+      <%= f.input :employee_id %>
+    </div>
+    <div class="field">
+      <%= f.input :date_of_admission %>
+    </div>
+    <div class="field">
+      <%= f.association :area, label_method: :area_name %>
+    </div>
+    <div class="field">
+      <%= f.association :area, label_method: :area_manager %>
+    </div>
+    <div class="field">
+      <%= f.input :salary %>
+    </div>
+    <div class="field">
+      <%= f.association :role, label_method: :role %>
+    </div>
+
+  <div class="form-actions">
+    <%= f.submit %>
+  </div>
+<% end %>

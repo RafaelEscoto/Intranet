@@ -1,0 +1,35 @@
+<%= simple_form_for(@training) do |f| %>
+  <% if @training.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@training.errors.count, "error") %> prohibited this training from being saved:</h2>
+
+      <ul>
+      <% @training.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.input :course_name, placeholder: 'Enter Course Name' %><br>    
+  </div>
+  <div class="field">
+    <%= f.input :topic, placeholder: 'Enter Topic' %><br>
+  </div>
+  <div class="field">
+    <%= f.association :users, label_method: :name %><br>
+  </div>
+  <div class="field">
+    <%= f.input :start_date %><br>
+  </div>
+  <div class="field">
+    <%= f.input :duration %><br>
+  </div>
+  <div class="field">
+    <%= f.input :attendance_id %><br>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
