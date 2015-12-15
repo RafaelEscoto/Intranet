@@ -2,23 +2,49 @@
 <html>
 <head>
   <title>Inventory</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,700' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
-
-<%= yield %>
-
+<div class="wrap header-padding layout-background">
+      <div id="header"></div>
+      <div class="backcontainer">
+        <div class="container">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="nav-header">
+                <a class="navbar-brand gold-text" href="http://notaria30qro.mx/">
+                  <button class="button gold-text">Notaria Pública 30</button> 
+                </a>
+                <a class="navbar-brand gold-text" href="/signup">
+                  <button class="button gold-text">Signup</button> 
+                </a>
+                <a class="navbar-brand gold-text" href="/login">
+                  <button class="button gold-text">Login</button> 
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+          <%= yield %>
 </body>
 
-<footer >
-	<div class="containerfooter, text-center">
-		Notaria Pública 30
-	</div>
-	<div class="imagen_logo, text-right">
-		<%= image_tag "powered_by_RoR.jpg"%>
-	</div>
+<br>
+<br>
+<br>
+
+<footer class="footer">
+  <div class="container-footer gold-text ">
+    <br>  	
+    <div class="text-center col-md-4 col-centered"></div>
+    <div class="text-center col-md-4 col-centered">By MREM</div>		
+    <div class="imagen_logo text-right col-md-4 col-centered"> <%= image_tag "powered_by_RoR.jpg"%> </div> 	
+  </div>
 </footer>
 
 </html>

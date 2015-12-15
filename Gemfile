@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -48,3 +48,5 @@ gem 'bootstrap', '~> 4.0.0.alpha1'
 gem 'autoprefixer-rails'
 gem 'haml'
 gem 'haml-rails'
+gem 'font-awesome-sass'
+gem 'devise'

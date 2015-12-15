@@ -1,0 +1,74 @@
+html, body{
+  font-family: 'Roboto Mono';
+  margin: 0px;
+}
+
+.layout-background{
+	background-color: #121B24;
+}
+
+.gold-text{
+	color: #F29F05;
+}
+
+.header-padding{
+	 padding: 0px 10px; //Top, Right, Bottom, Left (Relleno)
+}
+
+.container {
+  padding: 0;
+  width: 100%;
+}
+
+.form {
+  font-size: 16px;
+  margin: 0 auto 10px;
+  padding: 20px 0 10px 0;
+  text-align:center;
+  width: 300px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+  border-radius: 0px; 
+  border: 1px solid #E6E6E6;
+  color: #666666;
+  height: 30px;
+  margin: 5px auto;
+  text-indent: 10px;
+  width: 100%;
+}
+
+.button {
+  background: #0E9ED1;
+  border: 0;
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-top: 6px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.containerfooter{
+  background-color: rgb(63,15,11);
+  color: white;
+  padding: 15px 15px; 
+  width: 100%;
+}
+
+#header {
+    height: 1px;
+    position: fixed;
+    width:100%; 
+}
+
+.footer {
+  background-color:#121B24; 
+  bottom:0;
+  height:55px;
+  left:0;
+  position:absolute;
+  width:100%;
+}
+

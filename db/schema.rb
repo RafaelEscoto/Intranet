@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151123223147) do
+ActiveRecord::Schema.define(version: 20151214172542) do
 
   create_table "areas", force: :cascade do |t|
     t.string   "area_name"
@@ -19,6 +19,14 @@ ActiveRecord::Schema.define(version: 20151123223147) do
     t.integer  "number_of_employees"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
+  end
+
+  create_table "authenticates", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "clients", force: :cascade do |t|
@@ -36,11 +44,35 @@ ActiveRecord::Schema.define(version: 20151123223147) do
     t.datetime "updated_at",     null: false
   end
 
+  create_table "logins", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "logs", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
   create_table "roles", force: :cascade do |t|
     t.string   "role"
     t.string   "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "site_users", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "suppliers", force: :cascade do |t|
