@@ -48,6 +48,24 @@
   </tbody>
 </table>
 
+<%= link_to 'New Area', new_area_path, remote: true %>
+<%= link_to 'New Role', new_role_path, remote: true %>
+<%= link_to 'New User', new_user_path, remote: true %> 
+
+<div id="user-modal">
+  <div id="inner-user-modal"></div>
+</div>
+
+<div id="area-modal">
+  <div id="inner-area-modal"></div>
+</div>
+
+<div id="role-modal">
+  <div id="inner-role-modal"></div>
+</div>
+
+
 <br>
 
-<%= link_to 'New User', new_user_path %>
+      
+

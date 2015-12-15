@@ -1,0 +1,22 @@
+%head
+	%title
+		RH Menu
+	%body
+		.wrap
+		%h1 Menú de Recursos Humanos
+		%p Find me in app/views/rh_menu/index.html.haml
+		.backcontainer.row
+			.container
+				%nav.navbar.navbar-default
+					.container-fluid
+						.nav-header
+							= link_to 'New Area', new_area_path, remote: true
+							= link_to 'New Role', new_role_path, remote: true
+							= link_to 'New User', new_user_path, remote: true
+
+		#user-modal
+			#inner-user-modal
+		#area-modal
+			#inner-area-modal
+		#role-modal
+			#inner-role-modal

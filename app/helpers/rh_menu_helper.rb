@@ -1,0 +1,2 @@
+module RhMenuHelper
+end
